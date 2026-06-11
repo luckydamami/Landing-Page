@@ -1,3 +1,118 @@
-h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Miniver&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* colors */
+  --primary-color: #6f4e37;
+  --secondary-color: #d4a574;
+  --dark-color: #2a2a2a;
+  --light-color: #f5f1e8;
+  --light-pink-color: #faf4f5;
+  --medium-gray-color: #ccc /* font size */ --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+
+  /* Font Weight */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Border radius */
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+
+  /* site max width */
+  --site-max-width: 1300px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: var(--primary-color);
+}
+
+header .navbar {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.3s ease;
+}
+
+.navbar .nav-logo:hover {
+  transform: scale(1.05);
+}
+
+.navbar .nav-logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: brightness(1);
+  transition: all 0.3s ease;
+  border-radius: var(--border-radius-circle);
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-logo img:hover {
+  filter: brightness(1.2) drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+  transform: rotate(5deg);
+}
+
+.navbar .nav-logo .logo-text {
+  color: var(--light-color);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+.navbar .nav-menu {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+  padding: 10px 18px;
+  color: var(--light-color);
+  font-size: var(--font-size-m);
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius-m);
+  transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+  color: var(--primary-color);
+  background: var(--secondary-color);
 }
