@@ -14,7 +14,10 @@
   --dark-color: #2a2a2a;
   --light-color: #f5f1e8;
   --light-pink-color: #faf4f5;
-  --medium-gray-color: #ccc /* font size */ --font-size-s: 0.9rem;
+  --medium-gray-color: #ccc;
+
+  /* font size */
+  --font-size-s: 0.9rem;
   --font-size-n: 1rem;
   --font-size-m: 1.12rem;
   --font-size-l: 1.5rem;
@@ -61,7 +64,10 @@ img {
 }
 
 header {
-  background-color: var(--primary-color);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
 }
 
 header .navbar {
@@ -86,8 +92,8 @@ header .navbar {
   width: 50px;
   height: 50px;
   object-fit: contain;
-  filter: brightness(1);
   transition: all 0.3s ease;
+  filter: brightness(1);
   border-radius: var(--border-radius-circle);
   padding: 8px;
   background: rgba(255, 255, 255, 0.1);
@@ -124,6 +130,10 @@ header .navbar {
 }
 
 /* Hero section styles */
+.hero-section {
+  padding-top: 100px;
+}
+
 .hero-section {
   min-height: 100vh;
   background-image: url("../images/coffee-hero-section.jpg");
@@ -267,4 +277,23 @@ header .navbar {
     width: 100%;
     max-width: 320px;
   }
+}
+
+/* style for about section */
+.about-section {
+  padding: 120px 0;
+  background-color: var(--light-pink-color);
+}
+
+.about-section .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-section .about-image-wrapper .about-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: var(--border-radius-circle);
 }
