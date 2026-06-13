@@ -92,11 +92,15 @@
 
       <!-- Services section -->
       <div class="menu-section" id="services">
-        <h2 class="section-title">Our Menu</h2>
+        <h2 class="section-title">Our Services</h2>
         <div class="section-content">
           <ul class="menu-list">
             <li class="menu-item">
-              <img src="images/chees-burger.jfif" alt="Burger" />
+              <img
+                src="images/chees-burger.jfif"
+                alt="Burger"
+                class="menu-image"
+              />
               <h3 class="name">Cheese Burger</h3>
               <p class="text">
                 Juicy burger with melted cheese, crunchy lettuce, and special
@@ -104,35 +108,55 @@
               </p>
             </li>
             <li class="menu-item">
-              <img src="images/pizza-fire.jfif" alt="Pizza" />
+              <img
+                src="images/pizza-fire.jfif"
+                alt="Pizza"
+                class="menu-image"
+              />
               <h3 class="name">Wood-fired Pizza</h3>
               <p class="text">
                 Crispy pizza with fresh mozzarella, basil, and tomato sauce.
               </p>
             </li>
             <li class="menu-item">
-              <img src="images/cold-drink.jfif" alt="Cold Drink" />
+              <img
+                src="images/cold-drink.jfif"
+                alt="Cold Drink"
+                class="menu-image"
+              />
               <h3 class="name">Cold Drink</h3>
               <p class="text">
                 Refreshing iced drinks with fruity flavor and fizz.
               </p>
             </li>
             <li class="menu-item">
-              <img src="images/cold-coffee.webp" alt="Cold Coffee" />
+              <img
+                src="images/cold-coffee.webp"
+                alt="Cold Coffee"
+                class="menu-image"
+              />
               <h3 class="name">Cold Coffee</h3>
               <p class="text">
                 Chilled coffee with creamy foam and a hint of caramel.
               </p>
             </li>
             <li class="menu-item">
-              <img src="images/fruiet-cream.jfif" alt="Fruit Ice Cream" />
+              <img
+                src="images/fruiet-cream.jfif"
+                alt="Fruit Ice Cream"
+                class="menu-image"
+              />
               <h3 class="name">Fruit Ice Cream</h3>
               <p class="text">
                 Creamy fruit ice cream topped with berry pieces and mint.
               </p>
             </li>
             <li class="menu-item">
-              <img src="images/Espresso.jpg" alt="Espresso" />
+              <img
+                src="images/Espresso.jpg"
+                alt="Espresso"
+                class="menu-image"
+              />
               <h3 class="name">Espresso</h3>
               <p class="text">
                 Like Dislike Espresso is a concentrated coffee brewed by forcing
@@ -140,28 +164,28 @@
               </p>
             </li>
             <li class="menu-item">
-              <img src="images/Waffle.jfif" alt="Waffle" />
+              <img src="images/Waffle.jfif" alt="Waffle" class="menu-image" />
               <h3 class="name">Belgian Waffle</h3>
               <p class="text">
                 Warm waffle topped with fresh berries, syrup, and cream.
               </p>
             </li>
             <li class="menu-item">
-              <img src="images/donut.jfif" alt="Donut" />
+              <img src="images/donut.jfif" alt="Donut" class="menu-image" />
               <h3 class="name">Glazed Donut</h3>
               <p class="text">
                 Soft donut glazed with chocolate and sprinkled with nuts.
               </p>
             </li>
             <li class="menu-item">
-              <img src="images/berry.jfif" alt="Smoothie" />
+              <img src="images/berry.jfif" alt="Smoothie" class="menu-image" />
               <h3 class="name">Berry Smoothie</h3>
               <p class="text">
                 Fresh berry smoothie blended with yogurt and honey.
               </p>
             </li>
             <li class="menu-item">
-              <img src="images/latte.jfif" alt="Tea Latte" />
+              <img src="images/latte.jfif" alt="Tea Latte" class="menu-image" />
               <h3 class="name">Tea Latte</h3>
               <p class="text">
                 Creamy tea latte with aromatic spices and steamed milk.
@@ -170,7 +194,44 @@
           </ul>
         </div>
       </div>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="form-group">
+            <label>Name</label><input type="text" name="name" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label><input type="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label>Message</label><textarea name="message" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
+    <footer class="footer-section">
+      <div class="section-content">
+        <div class="social-link-list">
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+        <p class="policy-text">
+          <a href="#" class="policy-link">Privacy policy</a>
+          <span class="separator">.</span>
+          <a href="#" class="policy-link">Refund policy</a>
+        </p>
+      </div>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>
